@@ -1,10 +1,8 @@
 package com.llac.senha.service;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import javax.transaction.Transactional;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.llac.senha.model.SenhaGerada;
@@ -14,6 +12,7 @@ import com.llac.senha.repository.SenhaGeradaRepository;
 @Transactional
 public class SenhaGeradaServiceImpl implements SenhaGeradaService {
 
+	@Autowired
 	private SenhaGeradaRepository senhaGeradaRepository;
 
 	@Override
